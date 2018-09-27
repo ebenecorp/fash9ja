@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- navbar-->
-    <header class="header mb-5">
+   <header class="header mb-5">
       <!--
       *** TOPBAR ***
       _________________________________________________________
@@ -84,7 +84,7 @@
           </div>
           <div id="navigation" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
               <li class="nav-item dropdown menu-large"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Men<b class="caret"></b></a>
                 <ul class="dropdown-menu megamenu">
                   <li>
@@ -258,62 +258,113 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">New account / Sign in</li>
+                  <li aria-current="page" class="breadcrumb-item active">Customize an attire</li>
                 </ol>
               </nav>
             </div>
-            <div class="col-lg-6">
-              <div class="box">
-                <h1>New account</h1>
-                <p class="lead">Not our registered customer yet?</p>
-                <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
-                <hr>
-                <form action="customer-orders.html" method="post">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input id="name" type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control">
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="box">
-                <h1>Login</h1>
-                <p class="lead">Already our customer?</p>
-<!--                <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>-->
-                <hr>
-                <form action="customer-orders.html" method="post">
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control">
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+          </div>
+<!--          <div class="row">-->
           </div>
         </div>
       </div>
-    </div>
-    <!--
+<!--    form begining  -->
+
+        <div class="container">
+            <h2>Please fill this form with the carefully</h2><h4>NB: The information contained in this will be used in making your attire. You are responsible for its contents.</h4>
+            <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input id="firstname" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input id="lastname" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" type="text" class="form-control">
+                      </div>
+                    </div>
+                     <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="city">City</label>
+                        <input id="city" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="state">State</label>
+                        <input id="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                      <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="myFile">Gender</label>
+                          <select id="gender"  class="form-control"><option>Male</option><option>Female</option><option>Others</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="myFile">Choose a designer </label>
+                          <select id="gender"  class="form-control"><option>Yomi Casuals </option><option>Adeyi Fashion House </option><option>Fashion house 24</option><option>Just Akare</option><option>Others</option>
+                          </select>
+                      </div>
+                    </div>
+                     <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="others">Can't find your Prefered designer? Please manually type one now.</label>
+                        <input id="others" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="state">Attire Type</label>
+                        <input id="state" type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="myFile">Upload a picture of your chosen design</label>
+                        <input id="myFile" type="file" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="message">Extra Message</label>
+                        <textarea id="message" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Submit </button>
+                    </div>
+                  </div>
+                  <!-- /.row-->
+                </form>
+            <br> <br>
+      </div>
+     
+<!--      end of form-->
+      
+      <!--
     *** FOOTER ***
     _________________________________________________________
     -->
@@ -396,7 +447,7 @@
           <div class="col-lg-6">
             <!----<p class="text-center text-lg-right">Template design by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious: E-commerce</a>--->
               <!-- Not removing these links is part of the licence conditions of the template. Thanks for understanding :)-->
-            </p>
+<!--            </p>-->
           </div>
         </div>
       </div>
